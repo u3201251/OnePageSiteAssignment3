@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+/* Details for how I want my home title to look like, size of letters, colour, position etc */
+#homeTitle {
+    padding: 80px;
+    text-align: center;
+    background-image: url('homepagebg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%, 100%;
+    color: black;
+    width: 100%;
+    height: 900px;
+    margin-top: 20px;
+}
+
+#homeTitle h1 {
+    font-size: 40px;
+}
+
+#homeTitle p1, p2, p3, p4 {
+    font-size: 20px;
+}
+
+/* Details for how I want the navigation bar to look like and change appearance depending on mouse behaviour */
+.topnav {
+    background-color: #3c4748;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-right: 1px solid #f2f2f2;
+}
+
+.topnav a:hover {
+    background-color: #cae9ea;
+    color: black;
+}
+
+/* Details for how my four pages after the home page are going to look like, I'm organising into page 1&3 and page 2&4 */
+#industryLocation, #australianGames {
+    margin-top: 20px;
+    width: 100%;
+    height: 900px;
+    margin-left: 0%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #cae9ea;
+    border-radius: 0px;
+    color: black;
+}
+
+#industryLocation {
+    background-image: url('mapofaustralia.jpg');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 87%, 110%;
+    background-position: center;
+}
+
+#jobs, #upcomingEvents {
+    margin-top: 20px;
+    width: 100%;
+    height: 900px;
+    margin-left: 0%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #208c8c;
+    border-radius: 0dpx;
+    color: white;
+}
+
+#jobs h1 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+/* Formatting images into a row across the Jobs page with the same properties to look neat */
+.column {
+    float: left;
+    width: 23.55%;
+    height: 0%;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px #000;
+    transition: all 300ms ease-in-out;
+}
+
+/* Moving text under image and heading to the left */
+.column p {
+    text-align: left;
+}
+
+/* Increasing shadow when mouse hovers over to create a pop up visual que */
+.column:hover {
+    box-shadow: 0px 8px 30px #000;
+}
+
+/* Adding padding to image outside of the above styling guide as to not use the white background */
+.column {
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.textBoxJob {
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+/* CSS for my Games made in Australia page */
+.hollowknight {
+    position: relative;
+    width: 50%;
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 5%;
+    text-align: center;
+}
+
+.hollowknight:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FAILED CSS SLIDESHOW CODE, COULD NOT GET SLIDESHOW TO FUNCTION PROPERLY */
+
+/* Slideshow CSS */
+
+/* .slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0px;
+    border-radius: 3px 0px 0px 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: 0 0 0 0.8;
+}
+
+.slideText {
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.slideCounter {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.circle {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+} */
